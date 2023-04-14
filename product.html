@@ -27,15 +27,66 @@
             <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon" style="background: rgba(255,255,255,0);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-book bg-white" style="color: rgb(0,0,0);">
                             <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"></path>
                         </svg></span><span style="font-family: Heebo;font-size: 30px;">BOOKSTORE&nbsp;</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html" style="font-family: Heebo;">HOME</a></li>
-                        <li class="nav-item"><a class="nav-link" href="book.html" style="font-family: Heebo;">BOOKS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="comingsoon.html" style="font-family: heebo;">COMING SOON</a></li>
-                        <li class="nav-item"><a class="nav-link" href="shop.html" style="font-family: heebo;" target="_blank">SHOPPING</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html" style="font-family: heebo;">CONTACT</a></li>
-                    </ul><input class="form-control-sm shake animated" type="search" placeholder="Search" autofocus="" style="margin: 4px;padding: 7.4px 16px;width: 182px;">
-                </div><a class="btn btn-primary border-white" role="button" href="user.html" style="color: rgb(14,12,12);background: rgb(255,255,255);border-style: none;transform: translate(15px);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person-fill text-center" style="font-size: 30;width: 27px;height: 28px;margin: -69px;padding: 0;transform: translate(0px);">
+                        <div class="collapse navbar-collapse" id="navcol-1">
+                            <ul class="navbar-nav mx-auto">
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link active"
+                                  href="index.html"
+                                  style="font-family: Heebo; font-weight: bold"
+                                  >HOME</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="book.html" style="font-family: Heebo"
+                                  >BOOKS</a
+                                >
+                                <ul class="menu-book">
+                                  <li class="row">
+                                    <ul class="book-col">
+                                      <li><a href="#">Bestseller</a></li>
+                                      <li><a href="/comingsoon.html">Comingsoon</a></li>
+                                      <li><a href="#">New Books</a></li>
+                                    </ul>
+                                    <ul class="book-col">
+                                      <li><a href="#">Fiction</a></li>
+                                      <li><a href="#">Crime</a></li>
+                                      <li><a href="#">Non-Fiction Books</a></li>
+                                      <li><a href="#">Fanstasy</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link"
+                                  href="comingsoon.html"
+                                  style="font-family: heebo"
+                                  >COMING SOON</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="shop.html" style="font-family: heebo"
+                                  >SHOPPING</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link"
+                                  href="contact.html"
+                                  style="font-family: heebo"
+                                  >CONTACT</a
+                                >
+                              </li>
+                            </ul>
+                            <input
+                              class="form-control-sm shake animated"
+                              type="search"
+                              placeholder="Search"
+                              autofocus=""
+                              style="margin: 4px; padding: 7.4px 16px; width: 182px"
+                            />
+                          </div><a class="btn btn-primary border-white" role="button" href="user.html" style="color: rgb(14,12,12);background: rgb(255,255,255);border-style: none;transform: translate(15px);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person-fill text-center" style="font-size: 30;width: 27px;height: 28px;margin: -69px;padding: 0;transform: translate(0px);">
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
                     </svg></a><a class="btn btn-primary border-white" role="button" href="basket-giohang.html" style="color: rgb(14,12,12);background: rgb(255,255,255);border-style: none;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-basket text-center" style="font-size: 30;">
                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"></path>
