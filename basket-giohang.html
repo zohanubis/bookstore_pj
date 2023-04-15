@@ -1,325 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>Home - Bookstore</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap"
-    />
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css" />
-    <link rel="stylesheet" href="assets/css/Hero-Clean-Reverse.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/Light-Contact-List.css" />
-    <link rel="stylesheet" href="assets/css/Login-with-overlay-image.css" />
-    <link rel="stylesheet" href="assets/css/Pretty-Product-List.css" />
-    <link rel="stylesheet" href="assets/css/Simple-Slider.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/Team.css" />
-    <link rel="stylesheet" href="basket.css" />
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+        <title>Home - Bookstore</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap"
+        />
+        <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css" />
+        <link rel="stylesheet" href="assets/css/Hero-Clean-Reverse.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/Light-Contact-List.css" />
+        <link rel="stylesheet" href="assets/css/Login-with-overlay-image.css" />
+        <link rel="stylesheet" href="assets/css/Pretty-Product-List.css" />
+        <link rel="stylesheet" href="assets/css/Simple-Slider.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/Team.css" />
+        <link rel="stylesheet" href="basket.css" />
+    </head>
 
-  <body
-    style="
-      /*background: url(&quot;design.jpg&quot;);*/
-      background-position: 0 -60px;
-    "
-  >
-    <div class="container header">
-      <nav
-        class="navbar navbar-light navbar-expand-md fixed-top text-center navbar-shrink"
-        id="mainNav"
-      >
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="/"
-            ><span
-              class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon"
-              style="background: rgba(255, 255, 255, 0)"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="1em"
-                height="1em"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-                class="bi bi-book bg-white"
-                style="color: rgb(0, 0, 0)"
-              >
-                <path
-                  d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
-                ></path></svg></span
-            ><span style="font-family: Heebo; font-size: 30px"
-              >BOOKSTORE&nbsp;</span
-            ></a
-          ><button
-            data-bs-toggle="collapse"
-            class="navbar-toggler"
-            data-bs-target="#navcol-1"
-          >
-            <span class="visually-hidden">Toggle navigation</span
-            ><span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navcol-1">
-            <ul class="navbar-nav mx-auto" style="font-size: 15px">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html" style="font-family: Heebo"
-                  >HOME</a
+    <body style="/*background: url(&quot;design.jpg&quot;);*/ background-position: 0 -60px">
+        <div class="container header">
+            <nav class="navbar navbar-light navbar-expand-md fixed-top text-center navbar-shrink" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="/"
+                        ><span
+                            class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon"
+                            style="background: rgba(255, 255, 255, 0)"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="1em"
+                                height="1em"
+                                fill="currentColor"
+                                viewBox="0 0 16 16"
+                                class="bi bi-book bg-white"
+                                style="color: rgb(0, 0, 0)"
+                            >
+                                <path
+                                    d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+                                ></path></svg></span
+                        ><span style="font-family: Heebo; font-size: 30px">BOOKSTORE&nbsp;</span></a
+                    ><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+                        <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="navbar-nav mx-auto" style="font-size: 15px">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html" style="font-family: Heebo">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="book.html" style="font-family: Heebo">BOOKS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comingsoon.html" style="font-family: heebo">COMING SOON</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="shop.html" style="font-family: heebo">SHOPPING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html" style="font-family: heebo">CONTACT</a>
+                            </li>
+                        </ul>
+                        <input
+                            class="form-control-sm shake animated"
+                            type="search"
+                            placeholder="Search"
+                            autofocus=""
+                            style="margin: 4px; padding: 7.4px 16px; width: 182px; border: 1px solid black"
+                        />
+                    </div>
+                    <a
+                        class="btn btn-primary border-white"
+                        role="button"
+                        href="/basket-giohang.html"
+                        style="color: rgb(14, 12, 12); background: rgb(255, 255, 255); transform: translate(15px)"
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1em"
+                            height="1em"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                            class="bi bi-person-fill text-center"
+                            style="font-size: 30; width: 27px; height: 28px; margin: -69px; padding: 0; transform: translate(0px)"
+                        >
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path></svg></a
+                    ><a
+                        class="btn btn-primary border-white"
+                        role="button"
+                        href="/basket-giohang.html"
+                        style="color: rgb(14, 12, 12); background: rgb(255, 255, 255)"
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1em"
+                            height="1em"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                            class="bi bi-basket text-center"
+                            style="font-size: 30"
+                        >
+                            <path
+                                d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"
+                            ></path>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+            <section class="py-4 py-xl-5"></section>
+            <div class="text-center p-4 p-lg-5">
+                <h1 class="fw-bold mb-4" style="font-family: EB Garamond; font-size: 116px; transform: translate(76px)">GIỎ HÀNG</h1>
+                <div
+                    class="float-start"
+                    style="
+                        margin: 0px;
+                        padding: 0px;
+                        width: 1101px;
+                        font-family: Heebo;
+                        text-align: justify;
+                        transform: translate(190px) scale(1.2);
+                        margin-left: -24px;
+                    "
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="book.html" style="font-family: Heebo"
-                  >BOOKS</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="comingsoon.html"
-                  style="font-family: heebo"
-                  >COMING SOON</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="shop.html" style="font-family: heebo"
-                  >SHOPPING</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="contact.html"
-                  style="font-family: heebo"
-                  >CONTACT</a
-                >
-              </li>
-            </ul>
-            <input
-              class="form-control-sm shake animated"
-              type="search"
-              placeholder="Search"
-              autofocus=""
-              style="
-                margin: 4px;
-                padding: 7.4px 16px;
-                width: 182px;
-                border: 1px solid black;
-              "
-            />
-          </div>
-          <a
-            class="btn btn-primary border-white"
-            role="button"
-            href="/basket-giohang.html"
-            style="
-              color: rgb(14, 12, 12);
-              background: rgb(255, 255, 255);
-              transform: translate(15px);
-            "
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-              class="bi bi-person-fill text-center"
-              style="
-                font-size: 30;
-                width: 27px;
-                height: 28px;
-                margin: -69px;
-                padding: 0;
-                transform: translate(0px);
-              "
-            >
-              <path
-                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-              ></path></svg></a
-          ><a
-            class="btn btn-primary border-white"
-            role="button"
-            href="/basket-giohang.html"
-            style="color: rgb(14, 12, 12); background: rgb(255, 255, 255)"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
-              fill="currentColor"
-              viewBox="0 0 16 16"
-              class="bi bi-basket text-center"
-              style="font-size: 30"
-            >
-              <path
-                d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"
-              ></path>
-            </svg>
-          </a>
+                    <div class="basket">
+                        <div class="basket-labels">
+                            <ul>
+                                <li class="item item-heading">Sản Phẩm</li>
+                                <li class="price">Giá</li>
+                                <li class="quantity">Số Lượng</li>
+                                <li class="subtotal">Tổng Tiền</li>
+                            </ul>
+                        </div>
+                        <div class="basket-product">
+                            <div class="item">
+                                <div class="product-image">
+                                    <img
+                                        src="https://www.vinabook.com/images/detailed/358/P91250Mnha.jpg"
+                                        alt="Placholder Image 2"
+                                        class="product-frame"
+                                    />
+                                </div>
+                                <div class="product-details">
+                                    <h1>
+                                        <strong> <span class="item-quantity">4</span> x Paulo Coelho</strong>
+                                        Nhà Giả Kim
+                                    </h1>
+                                    <p><strong>Novel</strong></p>
+                                </div>
+                            </div>
+                            <div class="price">7.99</div>
+                            <div class="quantity">
+                                <input type="number" value="4" min="1" class="quantity-field" />
+                            </div>
+                            <div class="subtotal">31.96</div>
+                            <div class="remove">
+                                <button>Xóa sản phẩm</button>
+                            </div>
+                        </div>
+                        <div class="basket-product">
+                            <div class="item">
+                                <div class="product-image">
+                                    <img
+                                        src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-cover-06.jpg"
+                                        alt="Placholder Image 2"
+                                        class="product-frame"
+                                    />
+                                </div>
+                                <div class="product-details">
+                                    <h1>
+                                        <strong><span class="item-quantity">1</span> x John Roberts</strong>
+                                        The Born of APLEX
+                                    </h1>
+                                    <p><strong>Fantasy</strong></p>
+                                </div>
+                            </div>
+                            <div class="price">23.00</div>
+                            <div class="quantity">
+                                <input type="number" value="1" min="1" class="quantity-field" />
+                            </div>
+                            <div class="subtotal">23.00</div>
+                            <div class="remove">
+                                <button>Xóa Sản Phẩm</button>
+                            </div>
+                        </div>
+                    </div>
+                    <aside>
+                        <div class="summary" style="font-size: 12px">
+                            <div class="summary-total-items"><span class="total-items"> </span> Sản Phẩm Của Bạn</div>
+                            <div class="summary-subtotal">
+                                <div class="subtotal-title">Tổng Tiền</div>
+                                <div class="subtotal-value final-value" id="basket-subtotal">54.96</div>
+                                <div class="summary-promo hide">
+                                    <div class="promo-title">Promotion</div>
+                                    <div class="promo-value final-value" id="basket-promo"></div>
+                                </div>
+                            </div>
+                            <div class="summary-delivery">
+                                <select name="delivery-collection" class="summary-delivery-selection" style="font-size: 12px">
+                                    <option value="0" selected="selected">Chọn phương thức giao hàng</option>
+                                    <option value="collection">Giao hàng tận nơi</option>
+                                    <option value="first-class">Giao hàng tại trung tâm Bookstore</option>
+                                </select>
+                            </div>
+                            <div class="summary-total" style="font-size: 12px">
+                                <div class="total-title">Thành Tiền</div>
+                                <div class="total-value final-value" id="basket-total">54.95</div>
+                            </div>
+                            <div class="summary-checkout">
+                                <a href="basket-thanhtoan.html"><button class="checkout-cta">TIẾP TỤC</button></a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
         </div>
-      </nav>
-      <section class="py-4 py-xl-5"></section>
-      <div class="text-center p-4 p-lg-5">
-        <h1
-          class="fw-bold mb-4"
-          style="
-            font-family: EB Garamond;
-            font-size: 116px;
-            transform: translate(76px);
-          "
-        >
-          GIỎ HÀNG
-        </h1>
-        <div
-          class="float-start"
-          style="
-            margin: 0px;
-            padding: 0px;
-            width: 1101px;
-            font-family: Heebo;
-            text-align: justify;
-            transform: translate(190px) scale(1.2);
-            margin-left: -24px;
-          "
-        >
-          <div class="basket">
-            <div class="basket-labels">
-              <ul>
-                <li class="item item-heading">Sản Phẩm</li>
-                <li class="price">Giá</li>
-                <li class="quantity">Số Lượng</li>
-                <li class="subtotal">Tổng Tiền</li>
-              </ul>
-            </div>
-            <div class="basket-product">
-              <div class="item">
-                <div class="product-image">
-                  <img
-                    src="https://www.vinabook.com/images/detailed/358/P91250Mnha.jpg"
-                    alt="Placholder Image 2"
-                    class="product-frame"
-                  />
-                </div>
-                <div class="product-details">
-                  <h1>
-                    <strong>
-                      <span class="item-quantity">4</span> x Paulo
-                      Coelho</strong
-                    >
-                    Nhà Giả Kim
-                  </h1>
-                  <p><strong>Novel</strong></p>
-                </div>
-              </div>
-              <div class="price">7.99</div>
-              <div class="quantity">
-                <input type="number" value="4" min="1" class="quantity-field" />
-              </div>
-              <div class="subtotal">31.96</div>
-              <div class="remove">
-                <button>Xóa sản phẩm</button>
-              </div>
-            </div>
-            <div class="basket-product">
-              <div class="item">
-                <div class="product-image">
-                  <img
-                    src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-cover-06.jpg"
-                    alt="Placholder Image 2"
-                    class="product-frame"
-                  />
-                </div>
-                <div class="product-details">
-                  <h1>
-                    <strong
-                      ><span class="item-quantity">1</span> x John
-                      Roberts</strong
-                    >
-                    The Born of APLEX
-                  </h1>
-                  <p><strong>Fantasy</strong></p>
-                </div>
-              </div>
-              <div class="price">23.00</div>
-              <div class="quantity">
-                <input type="number" value="1" min="1" class="quantity-field" />
-              </div>
-              <div class="subtotal">23.00</div>
-              <div class="remove">
-                <button>Xóa Sản Phẩm</button>
-              </div>
-            </div>
-          </div>
-          <aside>
-            <div class="summary" style="font-size: 12px">
-              <div class="summary-total-items">
-                <span class="total-items"> </span> Sản Phẩm Của Bạn
-              </div>
-              <div class="summary-subtotal">
-                <div class="subtotal-title">Tổng Tiền</div>
-                <div class="subtotal-value final-value" id="basket-subtotal">
-                  54.96
-                </div>
-                <div class="summary-promo hide">
-                  <div class="promo-title">Promotion</div>
-                  <div class="promo-value final-value" id="basket-promo"></div>
-                </div>
-              </div>
-              <div class="summary-delivery">
-                <select
-                  name="delivery-collection"
-                  class="summary-delivery-selection"
-                  style="font-size: 12px"
-                >
-                  <option value="0" selected="selected">
-                    Chọn phương thức giao hàng
-                  </option>
-                  <option value="collection">Giao hàng tận nơi</option>
-                  <option value="first-class">
-                    Giao hàng tại trung tâm Bookstore
-                  </option>
-                </select>
-              </div>
-              <div class="summary-total" style="font-size: 12px">
-                <div class="total-title">Thành Tiền</div>
-                <div class="total-value final-value" id="basket-total">
-                  54.95
-                </div>
-              </div>
-              <div class="summary-checkout">
-                <a href="basket-thanhtoan.html"
-                  ><button class="checkout-cta">TIẾP TỤC</button></a
-                >
-              </div>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="assets/js/basket.js"></script>
-    <script src="assets/js/bold-and-bright.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
-    <script src="assets/js/price.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
-  </body>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/bs-init.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script src="assets/js/basket.js"></script>
+        <script src="assets/js/bold-and-bright.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+        <script src="assets/js/price.js"></script>
+        <script src="assets/js/Simple-Slider.js"></script>
+    </body>
 </html>
