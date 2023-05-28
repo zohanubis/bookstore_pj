@@ -2,7 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const signUpButton = document.getElementById('signUp');
     const signInButton = document.getElementById('signIn');
     const container = document.getElementById('container');
+    //Change
+    signUpButton.addEventListener('click', () => {
+        container.classList.add('right-panel-active');
+    });
 
+    signInButton.addEventListener('click', () => {
+        container.classList.remove('right-panel-active');
+    });
     const signUpForm = document.querySelector('.sign-up-container form');
     const signInForm = document.querySelector('.sign-in-container form');
 
@@ -94,14 +101,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Redirect to home page
         window.location.href = 'index.html';
-
-        //Change
-        signUpButton.addEventListener('click', () => {
-            container.classList.add('right-panel-active');
-        });
-
-        signInButton.addEventListener('click', () => {
-            container.classList.remove('right-panel-active');
-        });
     });
 });
