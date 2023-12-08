@@ -1,0 +1,11 @@
+.categories ul {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+}
+.categories {
+    background-color: rgb(233, 233, 233);
+    border: 1px solid black;
+    color: black;
+    text-decoration-color: black;
+}
