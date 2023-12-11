@@ -1,0 +1,8 @@
+﻿@model IEnumerable<QuanLySach.Models.ChuDe>
+
+@foreach (var item in Model) {
+    <li style="color:black">
+    <a href="@Url.Action("SachTheoLoai", "Sach", new {MaChuDe = item.MaChuDe})">@item.TenChuDe</a>
+    </li>
+}
+

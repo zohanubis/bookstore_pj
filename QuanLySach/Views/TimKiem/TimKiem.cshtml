@@ -1,0 +1,103 @@
+﻿@model IEnumerable<QuanLySach.Models.ProduceBook>
+
+@{
+    ViewBag.Title = "TimKiem";
+    Layout = "~/Views/Layout.cshtml";
+}
+
+<section class="py-4 py-xl-5">
+    <section class="py-4 py-xl-5">
+        <div class="container">
+            <div class="text-center p-4 p-lg-5">
+                <h1 class="fw-bold mb-4" style="font-family: EB Garamond; font-size: 116px">Tìm Kiếm Sách</h1>
+                <p class="fw-bold text-primary mb-2"
+                   style="
+                                    font-family: Heebo;
+                                    width: 581px;
+                                    height: 0;
+                                    margin-right: 0;
+                                    margin-left: 0;
+                                    padding: 0px;
+                                    transform: translate(324px);
+                                ">
+                    <br /><span style="font-weight: normal !important; color: rgb(86, 90, 97); background-color: rgb(242, 245, 247)">
+                        Porttitor in nibh id aliquet quam aliquam aliquet pulvinar integer dolor quis elementum, dui cursus nisi, nunc
+                        viverra nulla fringilla.
+                    </span><br /><br />
+                </p>
+            </div>
+        </div>
+    </section>
+</section>
+
+<div class="container-bodybook" style="margin-left:150px    ">
+    <div class="row justify-content-center flex-wrap" style="margin-top: 0px; margin-bottom: 40px">
+        <center>@ViewBag.TB</center>
+        @{
+            foreach (var item in Model)
+            {
+                <div class="col-md-3 mb-4">
+                    <a href="@Url.Action("XemChiTiet", "Sach", new { @ms = item.MaSach })">
+                        <img class="rounded img-fluid"
+                             src="~/Content/HinhAnhSP/@item.AnhBia"
+                             width="300px"
+                             loading="lazy"
+                             height="auto"
+                             style="box-shadow: 0px 0px 5px 1px" />
+                    </a>
+                    <a class="product-category-link" href="@Url.Action("XemChiTiet", "Sach", new { @ms = item.MaSach })">
+                        <br />
+                        <span class="title-product" style="color: var(--ast-global-color-2)">
+                            @item.TenSach.Substring(0, Math.Min(30, @item.TenSach.Length))
+                        </span>
+                        <br />
+                    </a>
+                    <span class="price">
+                        <ins>
+                            <span class="price-amount">
+                                <span class="price-symbol"></span><b>@item.GiaBan</b>VNĐ
+                            </span>
+                        </ins>
+                    </span>
+                    <br />
+                    <a class="btn btn-primary text-center link-dark border-dark"
+                       role="button"
+                       href="@Url.Action("ThanhToan", "GioHang")"
+                       style="
+                          width: 110px;
+                          height: 35px;
+                          font-size: 8px;
+                          color: rgb(255, 255, 255);
+                          background: rgb(0, 0, 0);
+                          text-align: center;
+                          margin-top: 5px;
+                          margin-right: 0;
+                          margin-bottom: 5px;
+                          margin-left: 17px;
+                          font-family: Heebo;
+                       ">
+                        Mua Ngay
+                    </a>
+                    <a class="btn btn-primary text-center link-dark border-dark"
+                       role="button"
+                       href="@Url.Action("XemChiTiet", "Sach", new { @ms = item.MaSach })"
+                       style="
+                          width: 110px;
+                          height: 35px;
+                          font-size: 10px;
+                          color: rgb(1, 1, 1);
+                          background: rgba(248, 250, 255, 0);
+                          text-align: center;
+                          margin-top: 5px;
+                          margin-right: 0;
+                          margin-bottom: 5px;
+                          margin-left: 11px;
+                          font-family: Heebo;
+                       ">
+                        Chi Tiết
+                    </a>
+                </div>
+            }
+        }
+    </div>
+</div>

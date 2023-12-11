@@ -1,0 +1,382 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout.cshtml";
+}
+
+@*<div class="row justify-content-md-start">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Wellcome
+                </div>
+                <div class="card-body">
+                    @if (Session["HoTenKH"] != null)
+                    {
+                        <p>Name: @Session["HoTenKH"].ToString()</p>
+                        <p>Email: @Session["email"].ToString()</p>
+                        <a href="@Url.Action("Logout","Home")" class="btn btn-warning">Logout</a>
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>*@
+
+<!-- Banner -->
+<section class="py-5">
+    <div class="container author">
+        <div class="row gy-4 gy-md-0">
+            <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
+                <div style="max-width: 350px; width: 500px; height: 500px">
+                    <h2 class="text-uppercase fw-bold"
+                        style="
+                                        font-family: Helvetica Neue;
+                    width: 351px;
+                                        height: 58.562px;
+                                        margin: -5px;
+                                        padding: -7px;
+                                        text-align: left;
+                                        font-size: 19px;
+                                    ">
+                        <br /><span style="color: var(--ast-global-color-2); background-color: rgb(242, 245, 247)">new reales</span><br /><br />
+                    </h2>
+                    <h2 class="text-capitalize fw-bold"
+                        style="
+                                        font-family: Helvetica Neue;
+                    width: 351px;
+                                        height: 139.562px;
+                                        margin: -5px;
+                                        padding: -7px;
+                                        text-align: left;
+                                        font-size: 50px;
+                                    ">
+                        <br /><span style="color: var(--ast-global-color-2); background-color: rgb(242, 245, 247)">Nhà Giả Kim</span><br /><br />
+                    </h2>
+                    <p class="my-3" style="font-family: Eb Garamond; text-align: justify">
+                        <br />The secret of life, though, is to fall seven times and to get up eight times. When we strive to become
+                        better than we are, everything around us becomes better, too.<br /><br />
+                    </p>
+                    <a class="btn btn-primary btn-lg border-dark me-2"
+                       role="button"
+                       href="basket-giohang.html"
+                       style="font-family: Heebo; color: rgb(255, 250, 250); background: rgb(0, 0, 0)">Mua Ngay</a><a class="btn btn-outline-primary btn-lg border-dark"
+                                                                                                                      role="button"
+                                                                                                                      href=""
+                                                                                                                      style="font-family: Heebo; color: rgb(31, 32, 34)">Chi Tiết</a>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade" data-aos-delay="50">
+                <div class="p-xl-5 m-xl-5">
+                    <img class="rounded img-fluid w-100 fit-cover"
+                         style="min-height: 300px"
+                         src="https://www.vinabook.com/images/detailed/358/P91250Mnha.jpg"
+                         loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container author">
+        <div class="row gy-4 gy-md-0">
+            <div class="col-md-6">
+                <div class="p-xl-5 m-xl-5">
+                    <img class="rounded img-fluid w-100 fit-cover"
+                         style="min-height: 300px"
+                         src="https://toplist.vn/images/800px/paulo-coelho-55673.jpg"
+                         loading="lazy" />
+                </div>
+            </div>
+            <div class="col-md-6 d-md-flex align-items-md-center" style="font-family: EB Gamunt">
+                <div style="max-width: 350px">
+                    <h2 class="text-uppercase fw-bold">Paulo Coelho</h2>
+                    <p class="my-3" style="width: 447px; font-family: heebo; text-align: justify; font-size: 16px">
+                        <br /><br />Paulo Coelho là một nhà văn người Brazil sinh năm 1947 tại Rio de Janeiro. Ông bắt đầu sự nghiệp văn
+                        chương vào những năm 1980 và đã viết nhiều tác phẩm văn học nổi tiếng.<br /><br /><br />Ông tốt nghiệp Học viện
+                        Luật đại học Sao Paulo, nhưng không theo đuổi nghề luật sư. Thay vào đó, ông đã trở thành một tay chèo thuyền trên
+                        sông Amazon và đi khắp thế giới. Khi ông trở về Brazil, ông bắt đầu sự nghiệp viết văn của mình.<br /><br /><br /><br />
+                    </p>
+                    <a class="btn btn-primary btn-lg border-dark me-2"
+                       role="button"
+                       href="#"
+                       style="color: rgb(27, 23, 23); background: rgba(55, 99, 244, 0)">Đọc Thêm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section></section>
+    <div style="margin-left:200px">
+        <div class="row" style="margin-left: 100px; margin-top: 0px">
+            <div class="col-md-4">
+                <h1 style="font-size: 27px; font-weight: bold; font-family: EB Gamunt">Giải thưởng Guiness</h1>
+                <p style="font-family: heebo; font-size: 16px; width: 326px">Tác giả có số lượng sách bán chạy nhất của Brazil (1991)</p>
+            </div>
+            <div class="col-md-4">
+                <h1 style="font-size: 27px; font-weight: bold; font-family: EB Gamunt">Giải thưởng Quốc Gia&nbsp;</h1>
+                <p style="font-family: heebo; font-size: 16px; width: 326px">Quốc gia văn học Italia (2001)</p>
+            </div>
+            <div class="col-md-4">
+                <h1 style="font-weight: bold; font-size: 28px; font-family: EB Gamunt">Giải Thưởng Áo</h1>
+                <p style="font-family: heebo; font-size: 16px; width: 326px">Cross of Honour for Science Art (2014)</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Danh mục sản phẩm-->
+<div class="container-list">
+    <div class="container">
+        <h1 style="font-family: EB; margin: 3px; padding: 8px; height: 80px; margin-top: 25px; margin-right: 0px; margin-bottom: 6px">
+            CATELOGUE
+        </h1>
+        <!--Product-list new arrival-->
+        <!--Renderbody-->
+        <div class="row" style="margin-top: 0px; margin-bottom: 40px">
+            <div class="col-md-3 text-start text-dark">
+                <img class="rounded img-fluid"
+                     src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-img-02.jpg"
+                     width="300px"
+                     loading="lazy"
+                     height="auto"
+                     style="box-shadow: 0px 0px 5px 1px" /><span class="product-category">Fantasy</span><a class="product-category-link" href="https://websitedemos.net/book-store-02/product/the-born-of-aplex-2/">
+                    <br />
+                    <span class="title-product" style="color: var(--ast-global-color-2)"> Mists of Algorab</span><br />
+                </a><span class="price">
+                    <span class="price-amount"> <span class="price-symbol">$</span><b>22.00</b></span>
+                </span>
+                <br />
+                <a class="btn btn-primary text-center link-dark border-dark"
+                   role="button"
+                   href="basket-giohang.html"
+                   style="
+                                width: 110px;
+                                height: 35px;
+                                font-size: 8px;
+                                color: rgb(255, 255, 255);
+                                background: rgb(0, 0, 0);
+                                text-align: center;
+                                margin-top: 5px;
+                                margin-right: 0;
+                                margin-bottom: 5px;
+                                margin-left: 17px;
+                                font-family: Heebo;
+                            ">Mua Ngay</a><a class="btn btn-primary text-center link-dark border-dark"
+                                             role="button"
+                                             href="basket-giohang.html"
+                                             style="
+                                width: 110px;
+                                height: 35px;
+                                font-size: 10px;
+                                color: rgb(1, 1, 1);
+                                background: rgba(248, 250, 255, 0);
+                                text-align: center;
+                                margin-top: 5px;
+                                margin-right: 0;
+                                margin-bottom: 5px;
+                                margin-left: 11px;
+                                font-family: Heebo;
+                            ">Đọc Thử</a>
+            </div>
+            <div class="col-md-3">
+                <img class="rounded img-fluid"
+                     src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-img-03.jpg"
+                     width="300px"
+                     loading="lazy"
+                     height="auto"
+                     style="box-shadow: 0px 0px 5px 1px" /><span class="product-category" align="left">Sci-Fi</span><a class="product-category-link" href="https://websitedemos.net/book-store-02/product/the-born-of-aplex-2/">
+                    <br />
+                    <span class="title-product" style="color: var(--ast-global-color-2)"><b>Cyber Angel</b></span><br />
+                </a><span class="price">
+                    <del aria-hidden="true">
+                        <span class="price-amount"> <span class="price-symbol">$</span>20.00</span>
+                    </del>
+                    <ins>
+                        <span class="price-amount">
+                            <bdi> <span class="price-symbol">$</span><b>15.00</b></bdi>
+                        </span>
+                    </ins>
+                </span>
+                <br /><a class="btn btn-primary text-center link-dark border-dark"
+                         role="button"
+                         href="basket-giohang.html"
+                         style="
+                                width: 110px;
+                                height: 35px;
+                                font-size: 8px;
+                                color: rgb(255, 255, 255);
+                                background: rgb(0, 0, 0);
+                                text-align: center;
+                                margin-top: 5px;
+                                margin-right: 0;
+                                margin-bottom: 5px;
+                                margin-left: 17px;
+                                font-family: Heebo;
+                            ">Mua Ngay</a><a class="btn btn-primary text-center link-dark border-dark"
+                                             role="button"
+                                             href="basket-giohang.html"
+                                             style="
+                                width: 110px;
+                                height: 35px;
+                                font-size: 10px;
+                                color: rgb(1, 1, 1);
+                                background: rgba(248, 250, 255, 0);
+                                text-align: center;
+                                margin-top: 5px;
+                                margin-right: 0;
+                                margin-bottom: 5px;
+                                margin-left: 11px;
+                                font-family: Heebo;
+                            ">Đọc Thử</a>
+            </div>
+            <div class="col-md-3">
+                <img class="rounded img-fluid"
+                     src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-img-04.jpg"
+                     width="300px"
+                     loading="lazy"
+                     height="auto"
+                     style="box-shadow: 0px 0px 5px 1px" /><span class="product-category" align="left">Fantasy</span><a class="product-category-link" href="https://websitedemos.net/book-store-02/product/the-born-of-aplex-2/">
+                    <br />
+                    <span class="title-product" style="color: var(--ast-global-color-2)">The Return of The King</span><br />
+                </a><span class="price">
+                    <del aria-hidden="true">
+                        <span class="price-amount"> <span class="price-symbol">$</span>32.00</span>
+                    </del>
+                    <ins>
+                        <span class="price-amount">
+                            <bdi> <span class="price-symbol">$</span><b>28.00</b></bdi>
+                        </span>
+                    </ins>
+                </span>
+                <br /><a class="btn btn-primary text-center link-dark border-dark"
+                         role="button"
+                         href="basket-giohang.html"
+                         style="
+                                width: 110px;
+                                height: 35px;
+                                font-size: 8px;
+                                color: rgb(255, 255, 255);
+                                background: rgb(0, 0, 0);
+                                text-align: center;
+                                margin-top: 5px;
+                                margin-right: 0;
+                                margin-bottom: 5px;
+                                margin-left: 17px;
+                                font-family: Heebo;
+                            ">Mua Ngay</a><a class="btn btn-primary text-center link-dark border-dark"
+                                             role="button"
+                                             href="basket-giohang.html"
+                                             style="
+                                width: 110px;
+                                height: 35px;
+                                font-size: 10px;
+                                color: rgb(1, 1, 1);
+                                background: rgba(248, 250, 255, 0);
+                                text-align: center;
+                                margin-top: 5px;
+                                margin-right: 0;
+                                margin-bottom: 5px;
+                                margin-left: 11px;
+                                font-family: Heebo;
+                            ">Đọc Thử</a>
+            </div>
+            <div class="col-md-3 text-start text-dark">
+                <img class="rounded img-fluid"
+                     src="https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/05/author-book-store-book-img-05.jpg"
+                     width="300px"
+                     loading="lazy"
+                     height="auto"
+                     style="box-shadow: 0px 0px 5px 1px" /><span class="product-category">Sci-FI</span><a class="product-category-link" href="https://websitedemos.net/book-store-02/product/the-born-of-aplex-2/">
+                    <br />
+                    <span class="title-product" style="color: var(--ast-global-color-2)"> 2024: Sanctuary</span><br />
+                </a><span class="price">
+                    <span class="price-amount"> <span class="price-symbol">$</span><b>24.00</b></span>
+                </span>
+                <br />
+                <a class="btn btn-primary text-center link-dark border-dark"
+                   role="button"
+                   href="basket-giohang.html"
+                   style="
+                                width: 110px;
+                                height: 35px;
+                                font-size: 8px;
+                                color: rgb(255, 255, 255);
+                                background: rgb(0, 0, 0);
+                                text-align: center;
+                                margin-top: 5px;
+                                margin-right: 0;
+                                margin-bottom: 5px;
+                                margin-left: 17px;
+                                font-family: Heebo;
+                            ">Mua Ngay</a><a class="btn btn-primary text-center link-dark border-dark"
+                                             role="button"
+                                             href="basket-giohang.html"
+                                             style="
+                                width: 110px;
+                                height: 35px;
+                                font-size: 10px;
+                                color: rgb(1, 1, 1);
+                                background: rgba(248, 250, 255, 0);
+                                text-align: center;
+                                margin-top: 5px;
+                                margin-right: 0;
+                                margin-bottom: 5px;
+                                margin-left: 11px;
+                                font-family: Heebo;
+                            ">Đọc Thử</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="map" style="height: 100%; position: relative; overflow: visible; "></div>
+<!--Giới thiệu chủ đề và thành viên-->
+<section class="newsletter-subscribe py-4 py-xl-5">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+                <h2 class="display-6 fw-bold" style="font-family: EB Gamunt">Be the first to know</h2>
+                <p class="text-muted" style="font-family: heebo">Mọi thông tin chi tiết, có thể liên hệ ở mục Contact</p>
+            </div>
+        </div>
+        <form class="d-flex justify-content-center flex-wrap" method="post">
+            <div class="mb-3">
+                <input class="form-control" type="email" name="email" placeholder="Your Email" style="font-family: Heebo" />
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary border-dark ms-2" type="submit" style="font-family: Heebo; background: rgb(249, 250, 255)">
+                    ĐĂNG KÍ
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="container py-4 py-xl-5">
+        <div class="row gy-4 row-cols-2 row-cols-md-4" style="margin-left: 30px">
+            <div class="col" style="transform: translate(320px)">
+                <div class="card border-0 shadow-none"></div>
+            </div>
+            <div class="col" style="transform: translate(320px)">
+                <div class="card border-0 shadow-none"></div>
+            </div>
+        </div>
+        
+        <!-- prettier-ignore -->
+        <script async
+                src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        </script>
+        <script>
+            let map;
+
+async function initMap() {
+  const { Map } = await google.maps.importLibrary("maps");
+
+  map = new Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
+
+initMap();
+        </script>
+    </div>
+</section>
+
+

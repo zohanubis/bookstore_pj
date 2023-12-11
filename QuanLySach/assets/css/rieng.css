@@ -1,0 +1,28 @@
+.categories ul {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+}
+
+.categories {
+    background-color: rgb(14,99,166);
+    color: black;
+    text-decoration-color: black;
+}
+
+    .categories li {
+        color: black;
+    }
+
+        .categories li:hover {
+            color: red;
+        }
+
+    .categories a {
+        color: white;
+        text-decoration: none;
+    }
+
+        .categories a:hover {
+            text-decoration: underline;
+        }

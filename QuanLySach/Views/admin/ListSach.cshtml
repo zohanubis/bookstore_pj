@@ -1,0 +1,82 @@
+﻿@model IEnumerable<QuanLySach.Models.ProduceBook>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/admin/LayoutAdmin.cshtml";
+}
+<h2>ListSach</h2>
+
+<p>
+    <a href="@Url.Action("insertSach", "Sach")">Thêm Sách</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TenSach)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GiaBan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MoTa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayCapNhat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AnhBia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoLuongTon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaChuDe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaNXB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Moi)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenSach)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GiaBan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MoTa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayCapNhat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AnhBia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuongTon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaChuDe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNXB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Moi)
+            </td>
+            <td>
+
+                <a href="@Url.Action("XemChiTiet", "Sach", new { @ms =item.MaSach })">Xem Chi Tiết</a>|
+                <a href="@Url.Action("UpdateSach", "Sach", new { id=item.MaSach })">Sửa</a>
+                <a href="@Url.Action("DeleteSach", "Sach", new { id=item.MaSach })">Xóa</a>
+            </td>
+        </tr>
+    }
+
+</table>

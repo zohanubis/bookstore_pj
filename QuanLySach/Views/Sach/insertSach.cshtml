@@ -1,0 +1,216 @@
+﻿@model QuanLySach.Models.ProduceBook
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>insertSach</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    @using (Html.BeginForm("insertSach", "Sach", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="container mt-4">
+            <h4 class="mb-4">ProduceBook</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="TenSach">Tên Sách</label>
+
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.TenSach, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TenSach, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="GiaBan">Giá Bán Sách</label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.GiaBan, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.GiaBan, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="Mota">Mô Tả Sách</label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.MoTa, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.MoTa, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="DateUp">Ngày Cập Nhật</label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.NgayCapNhat, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.NgayCapNhat, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="anh">Ảnh</label>
+                <div class="col-md-10">
+                    <input name="Image" type="file" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="SoLuong">Số Lượng</label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.SoLuongTon, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.SoLuongTon, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="MaCD">Mã Chủ Đề</label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.MaChuDe, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.MaChuDe, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="MaNXB">Mã Nhà Xuất Bản</label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.MaNXB, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.MaNXB, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-md-2 col-form-label" for="Moi">Sách Mới (1:Có|0:Không)</label>
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Moi, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Moi, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-10 offset-md-2">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </div>
+
+        </div>
+    }
+    <!-- Hiển thị bảng dữ liệu -->
+    <div class="container mt-4" id="dataContainer">
+        <h4 class="mb-4">CHỦ ĐỀ VÀ NHÀ SẢN XUẤT SÁCH</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Mã NXB</th>
+                    <th>Tên Nhà Xuất Bản</th>
+                    <th>Mã Chủ Đề</th>
+                    <th>Tên Chủ Đề</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nhà xuất bản Trẻ</td>
+                    <td>1</td>
+                    <td>Công nghệ thông tin</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>NXB Thống kê</td>
+                    <td>2</td>
+                    <td>Ngoại ngữ</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Kim đồng</td>
+                    <td>3</td>
+                    <td>Phật Giáo</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Đại học quốc gia</td>
+                    <td>4</td>
+                    <td>Sách học làm người</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Văn hóa nghệ thuật</td>
+                    <td>5</td>
+                    <td>Văn học nước ngoài</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Văn hóa</td>
+                    <td>6</td>
+                    <td>Kinh Tế</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>NXB Lao động - Xã hội</td>
+                    <td>7</td>
+                    <td>Khoa học Vật lý</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Khoa Học & Kỹ Thuật</td>
+                    <td>8</td>
+                    <td>Khoa học Xã hội</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Thanh Niên</td>
+                    <td>9</td>
+                    <td>Luật</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>NXB Tài Chính</td>
+                    <td>10</td>
+                    <td>Từ điển</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>NXB Phụ Nữ</td>
+                    <td>11</td>
+                    <td>Lịch sử, địa lý</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>NXB Hồng Đức </td>
+                    <td>12</td>
+                    <td>Vật nuôi - Cây cảnh</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>NXB Phương Đông</td>
+                    <td>13</td>
+                    <td>Khoa học kỹ thuật</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>NXB Thời Đại</td>
+                    <td>14</td>
+                    <td>Mỹ thuật</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>NXB Tổng hợp TP.HCM</td>
+                    <td>15</td>
+                    <td>Nghệ thuật</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Add the Bootstrap JS and Popper.js scripts at the end of the body -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

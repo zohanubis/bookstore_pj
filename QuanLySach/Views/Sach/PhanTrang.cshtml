@@ -1,0 +1,135 @@
+﻿
+@model PagedList.IPagedList<QuanLySach.Models.ProduceBook>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "PhanTrang";
+    Layout = "~/Views/Layout.cshtml";
+}
+
+<section class="py-4 py-xl-5" style="margin-bottom:-100px">
+    <section class="py-4 py-xl-5">
+        <div class="container">
+            <div class="text-center p-4 p-lg-5">
+                <h1 class="fw-bold mb-4" style="font-family: EB Garamond; font-size: 116px">Sách</h1>
+                <p class="fw-bold text-primary mb-2"
+                   style="
+                                    font-family: Heebo;
+                                    width: 581px;
+                                    height: 0;
+                                    margin-right: 0;
+                                    margin-left: 0;
+                                    padding: 0px;
+                                    transform: translate(324px);
+                                ">
+                    <br /><span style="font-weight: normal !important; color: rgb(86, 90, 97); background-color: rgb(242, 245, 247)">
+                        Porttitor in nibh id aliquet quam aliquam aliquet pulvinar integer dolor quis elementum, dui cursus nisi, nunc
+                        viverra nulla fringilla.
+                    </span><br /><br />
+                </p>
+            </div>
+        </div>
+    </section>
+</section>
+<div class="container mt-5 banner-main" >
+    <div class="row banner" style="margin-top: 0x; margin-bottom:30px;">
+        <!-- Danh sách danh mục sách bên trái -->
+        <div class="col-md-3 categories" style="background-color: rgb(14, 99, 166); color: white; ">
+            <ul style="list-style-type: none; font-family: EB Garamond; text-align: left; font-size: 20px;">
+                @Html.Action("MucLuc", "Home")
+            </ul>
+        </div>
+
+        <!-- Banner ảnh bên phải -->
+        <div class="col-md-9 img-banner">
+            <img src="https://cdn0.fahasa.com/media/magentothem/banner7/Donkho_BannerM_Banner_840x320.jpg"
+                 alt="Banner Image"
+                 style="width: 100%" />
+        </div>
+    </div>
+</div>
+<div class="container-bodybook" style="margin-left:150px    ">
+    <div class="row justify-content-center flex-wrap" style="margin-top: 0px; margin-bottom: 40px">
+        <center>@ViewBag.TB</center>
+        @{
+            foreach (var item in Model)
+            {
+                <div class="col-md-3 mb-4">
+                    <a href="@Url.Action("XemChiTiet", "Sach", new { @ms = item.MaSach })">
+                        <img class="rounded img-fluid"
+                             src="~/Content/HinhAnhSP/@item.AnhBia"
+                             width="300px"
+                             loading="lazy"
+                             height="auto"
+                             style="box-shadow: 0px 0px 5px 1px" />
+                    </a>
+                    <a class="product-category-link" href="@Url.Action("XemChiTiet", "Sach", new { @ms = item.MaSach })">
+                        <br />
+                        <span class="title-product" style="color: var(--ast-global-color-2)">
+                            @item.TenSach.Substring(0, Math.Min(30, @item.TenSach.Length))
+                        </span>
+                        <br />
+                    </a>
+                    <span class="price">
+                        <ins>
+                            <span class="price-amount">
+                                <span class="price-symbol"></span><b>@item.GiaBan</b>VNĐ
+                            </span>
+                        </ins>
+                    </span>
+                    <br />
+                    <a class="btn btn-primary text-center link-dark border-dark"
+                       role="button"
+                       href="@Url.Action("ThanhToan", "GioHang")"
+                       style="
+                          width: 110px;
+                          height: 35px;
+                          font-size: 8px;
+                          color: rgb(255, 255, 255);
+                          background: rgb(0, 0, 0);
+                          text-align: center;
+                          margin-top: 5px;
+                          margin-right: 0;
+                          margin-bottom: 5px;
+                          margin-left: 17px;
+                          font-family: Heebo;
+                       ">
+                        Mua Ngay
+                    </a>
+                    <a class="btn btn-primary text-center link-dark border-dark"
+                       role="button"
+                       href="@Url.Action("XemChiTiet", "Sach", new { @ms = item.MaSach })"
+                       style="
+                          width: 110px;
+                          height: 35px;
+                          font-size: 10px;
+                          color: rgb(1, 1, 1);
+                          background: rgba(248, 250, 255, 0);
+                          text-align: center;
+                          margin-top: 5px;
+                          margin-right: 0;
+                          margin-bottom: 5px;
+                          margin-left: 11px;
+                          font-family: Heebo;
+                       ">
+                        Chi Tiết
+                    </a>
+                </div>
+            }
+        }
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-md-12 text-center">
+        <p>Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount</p>
+        <div class="d-flex justify-content-center">
+            @Html.PagedListPager(Model, page => Url.Action("PhanTrang", new { page }), new PagedListRenderOptions { Display = PagedListDisplayMode.IfNeeded, LiElementClasses = new[] { "pagination-item" } })
+        </div>
+    </div>
+
+</div>
+<style>
+    .pagination-item {
+        margin: 0 5px; /* Khoảng cách giữa các số trang */
+    }
+</style>
